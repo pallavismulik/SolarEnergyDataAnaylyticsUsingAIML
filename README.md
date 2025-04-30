@@ -66,7 +66,7 @@ The core objectives of this project include:
 The project is organized into the following directories and files:
 
 => FDA_Project/
-```bash
+
 ├── data/
 │   └── (Cleaned CSV files from NSRDB)
 ├── cleaned_data.csv               # Processed and cleaned data for each city
