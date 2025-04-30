@@ -12,44 +12,43 @@ The core objectives of this project include:
 - **Solar energy optimization**: Analyzing the energy generation capacity based on weather conditions and solar data.
 
 ## 📘 Data Dictionary
-+------------------------+------------------------------------------------------------+-------------------------+
-| Column Name            | Description                                                 | Unit                    |
-+------------------------+------------------------------------------------------------+-------------------------+
-| year                   | Timestamp year                                              | -                       |
-| month                  | Timestamp month                                             | -                       |
-| day                    | Timestamp day                                               | -                       |
-| hour                   | Timestamp hour                                              | -                       |
-| minute                 | Timestamp minute                                            | -                       |
-| dni                    | Direct Normal Irradiance: sunlight directly from the sun    | W/m²                    |
-| dhi                    | Diffuse Horizontal Irradiance: scattered sunlight from atmosphere | W/m²              |
-| ghi                    | Global Horizontal Irradiance: total solar radiation on a horizontal surface | W/m²    |
-| dry_bulb               | Air temperature measured in the shade                       | °C                      |
-| dew_point              | Temperature at which air becomes saturated with moisture    | °C                      |
-| relative_humidity      | Moisture in the air compared to the maximum it could hold   | %                       |
-| pressure               | Atmospheric pressure                                        | mbar                    |
-| wind_direction         | Wind direction (from where wind is coming)                  | Degrees                 |
-| wind_speed             | Wind speed                                                  | m/s                     |
-| ghi_clearsky           | Expected irradiance under clear-sky conditions (model-based) | W/m²                   |
-| dni_clearsky           | Expected direct normal irradiance under clear-sky conditions | W/m²                   |
-| dhi_clearsky           | Expected diffuse horizontal irradiance under clear-sky conditions | W/m²              |
-| solar_zenith_angle     | Angle between sun and vertical above observer               | Degrees                 |
-| solar_azimuth_angle    | Sun’s direction along the horizon                           | Degrees                 |
-| solar_elevation_angle  | Altitude of the sun above the horizon                       | Degrees                 |
-| surface_albedo         | Reflectivity of the surface (snow, sand, etc.)              | 0–1 (unitless)          |
-| aoi                    | Angle of incidence on the panel                             | Degrees                 |
-| poa_direct             | Plane-of-array direct radiation                             | W/m²                    |
-| poa_global             | Total POA radiation (direct + diffuse)                      | W/m²                    |
-| cell_temperature       | Temperature of the solar cell                               | °C                      |
-| module_temperature     | Temperature of the entire solar panel                       | °C                      |
-| dc_voltage             | DC-side electrical voltage                                  | V                       |
-| dc_current             | DC-side electrical current                                  | A                       |
-| dc_power               | DC-side electrical power                                    | W                       |
-| ac_voltage             | AC-side electrical voltage                                  | V                       |
-| ac_current             | AC-side electrical current                                  | A                       |
-| ac_power               | AC-side electrical power                                    | W                       |
-| efficiency             | Inverter or system efficiency                               | % or unitless           |
-| capacity_factor        | Ratio of actual output to max possible output               | % or 0–1                |
-+------------------------+------------------------------------------------------------+-------------------------+
+| Column Name           | Description                                                  | Unit            |
+|-----------------------|--------------------------------------------------------------|------------------|
+| year                  | Timestamp year                                               | -               |
+| month                 | Timestamp month                                              | -               |
+| day                   | Timestamp day                                                | -               |
+| hour                  | Timestamp hour                                               | -               |
+| minute                | Timestamp minute                                             | -               |
+| dni                   | Direct Normal Irradiance: sunlight directly from the sun     | W/m²            |
+| dhi                   | Diffuse Horizontal Irradiance: scattered sunlight from atmosphere | W/m²        |
+| ghi                   | Global Horizontal Irradiance: total solar radiation on a horizontal surface | W/m² |
+| dry_bulb              | Air temperature measured in the shade                        | °C              |
+| dew_point             | Temperature at which air becomes saturated with moisture     | °C              |
+| relative_humidity     | Moisture in the air compared to the maximum it could hold    | %               |
+| pressure              | Atmospheric pressure                                         | mbar            |
+| wind_direction        | Wind direction (from where wind is coming)                   | Degrees         |
+| wind_speed            | Wind speed                                                   | m/s             |
+| ghi_clearsky          | Expected irradiance under clear-sky conditions (model-based) | W/m²            |
+| dni_clearsky          | Expected direct normal irradiance under clear-sky conditions | W/m²            |
+| dhi_clearsky          | Expected diffuse horizontal irradiance under clear-sky conditions | W/m²        |
+| solar_zenith_angle    | Angle between sun and vertical above observer                | Degrees         |
+| solar_azimuth_angle   | Sun’s direction along the horizon                            | Degrees         |
+| solar_elevation_angle | Altitude of the sun above the horizon                        | Degrees         |
+| surface_albedo        | Reflectivity of the surface (snow, sand, etc.)               | 0–1 (unitless)  |
+| aoi                   | Angle of incidence on the panel                              | Degrees         |
+| poa_direct            | Plane-of-array direct radiation                              | W/m²            |
+| poa_global            | Total POA radiation (direct + diffuse)                       | W/m²            |
+| cell_temperature      | Temperature of the solar cell                                | °C              |
+| module_temperature    | Temperature of the entire solar panel                        | °C              |
+| dc_voltage            | DC-side electrical voltage                                   | V               |
+| dc_current            | DC-side electrical current                                   | A               |
+| dc_power              | DC-side electrical power                                     | W               |
+| ac_voltage            | AC-side electrical voltage                                   | V               |
+| ac_current            | AC-side electrical current                                   | A               |
+| ac_power              | AC-side electrical power                                     | W               |
+| efficiency            | Inverter or system efficiency                                | % or unitless   |
+| capacity_factor       | Ratio of actual output to max possible output                | % or 0–1        |
+
 
 
 
