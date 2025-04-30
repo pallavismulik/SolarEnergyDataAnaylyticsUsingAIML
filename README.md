@@ -66,19 +66,22 @@ The core objectives of this project include:
 The project is organized into the following directories and files:
 
 => FDA_Project/
+```bash
 ├── data/
-│   ├── (Raw CSV files from NSRDB)
-├── cleaned_data.csv (Processed and cleaned data for each city)
-├── analytics.py            # Data cleaning, preprocessing, and visualization
-├── model_train.py          # Common model training and evaluation functions
-├── xgb_model.py            # XGBoost model implementation
-├── lstm_model.py           # LSTM model for time series forecasting
-├── modelling.py            # Comparative modeling for Maharashtra cities
-├── wind_energy_analysis.py # Wind speed trends and wind energy analysis
+│   └── (Cleaned CSV files from NSRDB)
+├── cleaned_data.csv               # Processed and cleaned data for each city
+├── analytics.py                   # Data cleaning, preprocessing, and visualization
+├── model_train.py                 # Common model training and evaluation functions
+├── xgb_model.py                   # XGBoost model implementation
+├── lstm_model.py                  # LSTM model for time series forecasting
+├── modelling.py                   # Comparative modeling for Maharashtra cities
+├── wind_energy_analysis.py        # Wind speed trends and wind energy analysis
 ├── plot/
 │   └── (All output graphs, trends, and visualizations)
-├── Makefile                    # Build automation for project
-└── README.md                   # Project overview and usage instructions
+├── Makefile                       # Build automation for project
+└── README.md                      # Project overview and usage instructions
+
+
 
 => Run all scripts(.py) to see functioning of each file one by one
 => At last Run everything in sequence => command (Makefile) => make grouped-analytics (on terminal)
