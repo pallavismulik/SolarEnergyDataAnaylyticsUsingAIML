@@ -95,20 +95,6 @@ The project is organized into the following directories and files:
 => At last Run everything in sequence => command (Makefile) => make grouped-analytics (on terminal)
 => see Output in plots folder
 
-
-###  Solar Energy Pie Chart (6 AM - 6 PM)
-![Day vs Night Pie](plots/day_vs_night_pie.png)
-
-###  Model Comparison Charts
-- ![MAE](plots/model_comparison_MAE.png)
-- ![R²](plots/model_comparison_R2.png)
-- ![RMSE](plots/model_comparison_RMSE.png)
-
-=> This image shows in months of MAY we have highst GHI and Temp are directly proportional
-=> So we can keep stored batteries in these time stored
-file:/home/rudra/Pictures/Screenshots/Screenshot from 2025-04-20 15-37-25.png
-file:///home/rudra/Desktop/FDA_Project/plots/temp_vs_ghi.png
-
 ##  Data Preprocessing
 ### How to download data
 ### Raw Data  openei.org -> explore -> solar -> NERL -> NSRDB -> NSRDB Viewer
