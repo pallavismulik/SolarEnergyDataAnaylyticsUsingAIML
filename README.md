@@ -27,37 +27,41 @@ We also introduced rolling MAE plots for anomaly detection and Explainable AI co
 Timeframe: Hourly data for one full year
 
 ## 📘 Data Dictionary
-+------------------------+------------------------------------------------------------+-------------------------+
-| Column Name            | Description                                                 | Unit                    |
-+------------------------+------------------------------------------------------------+-------------------------+
-| year                   | Timestamp year                                              | -                       |
-| month                  | Timestamp month                                             | -                       |
-| day                    | Timestamp day                                               | -                       |
-| hour                   | Timestamp hour                                              | -                       |
-| minute                 | Timestamp minute                                            | -                       |
-| dni                    | Direct Normal Irradiance: sunlight directly from the sun    | W/m²                    |
-| dhi                    | Diffuse Horizontal Irradiance: scattered sunlight from atmosphere | W/m²              |
-| ghi                    | Global Horizontal Irradiance: total solar radiation on a horizontal surface | W/m²    |
-| dry_bulb               | Air temperature measured in the shade                       | °C                      |
-| dew_point              | Temperature at which air becomes saturated with moisture    | °C                      |
-| relative_humidity      | Moisture in the air compared to the maximum it could hold   | %                       |
-| pressure               | Atmospheric pressure                                        | mbar                    |
-| wind_direction         | Wind direction (from where wind is coming)                  | Degrees                 |
-| wind_speed             | Wind speed                                                  | m/s                     |
-| ghi_clearsky           | Expected irradiance under clear-sky conditions (model-based) | W/m²                   |
-| dni_clearsky           | Expected direct normal irradiance under clear-sky conditions | W/m²                   |
-| dhi_clearsky           | Expected diffuse horizontal irradiance under clear-sky conditions | W/m²              |
-| solar_zenith_angle     | Angle between sun and vertical above observer               | Degrees                 |
-| solar_azimuth_angle    | Sun’s direction along the horizon                           | Degrees                 |
-| solar_elevation_angle  | Altitude of the sun above the horizon                       | Degrees                 |
-| surface_albedo         | Reflectivity of the surface (snow, sand, etc.)              | 0–1 (unitless)          |
-| aoi                    | Angle of incidence on the panel                             | Degrees                 |
-| poa_direct             | Plane-of-array direct radiation                             | W/m²                    |
-| poa_global             | Total POA radiation (direct + diffuse)                      | W/m²                    |
-| cell_temperature       | Temperature of the solar cell                               | °C                      |
-| module_temperature     | Temperature of the entire solar panel                       | °C                      |
-+------------------------+------------------------------------------------------------+-------------------------+
 
+
+![image](https://github.com/user-attachments/assets/33d03714-1bd6-4ed2-acb3-0540a1559379)
+<!--
++------------------------+------------------------------------------------------------------------------+-------------------+
+| Column Name            | Description                                                 					| Unit              |
++------------------------+------------------------------------------------------------------------------+-------------------+
+| year                   | Timestamp year                                              					| -         		|
+| month                  | Timestamp month                                             					| -                 |
+| day                    | Timestamp day                                               					| -                 |
+| hour                   | Timestamp hour                                              					| -                 |
+| minute                 | Timestamp minute                                            					| -                 |
+| dni                    | Direct Normal Irradiance: sunlight directly from the sun    				   	| W/m²              |
+| dhi                    | Diffuse Horizontal Irradiance: scattered sunlight from atmosphere 		   	| W/m²              |
+| ghi                    | Global Horizontal Irradiance: total solar radiation on a horizontal surface	| W/m²    			|
+| dry_bulb               | Air temperature measured in the shade                       					| °C                |
+| dew_point              | Temperature at which air becomes saturated with moisture    					| °C                |
+| relative_humidity      | Moisture in the air compared to the maximum it could hold   					| %                 |
+| pressure               | Atmospheric pressure                                        					| mbar              |
+| wind_direction         | Wind direction (from where wind is coming)                  					| Degrees           |
+| wind_speed             | Wind speed                                                  					| m/s               |
+| ghi_clearsky           | Expected irradiance under clear-sky conditions (model-based) 				| W/m²              |
+| dni_clearsky           | Expected direct normal irradiance under clear-sky conditions 				| W/m²             	|
+| dhi_clearsky           | Expected diffuse horizontal irradiance under clear-sky conditions 			| W/m²             	|
+| solar_zenith_angle     | Angle between sun and vertical above observer               					| Degrees          	|
+| solar_azimuth_angle    | Sun’s direction along the horizon                           					| Degrees          	|
+| solar_elevation_angle  | Altitude of the sun above the horizon                       					| Degrees          	|
+| surface_albedo         | Reflectivity of the surface (snow, sand, etc.)              					| 0–1 (unitless)   	|
+| aoi                    | Angle of incidence on the panel                             					| Degrees          	|
+| poa_direct             | Plane-of-array direct radiation                             					| W/m²             	|
+| poa_global             | Total POA radiation (direct + diffuse)                      					| W/m²             	|
+| cell_temperature       | Temperature of the solar cell                               					| °C               	|
+| module_temperature     | Temperature of the entire solar panel                       					| °C               	|
++------------------------+------------------------------------------------------------------------------+-------------------+
+-->
 
 ### Technologies Used
 - **Python** for data processing and model training.
@@ -72,6 +76,7 @@ Timeframe: Hourly data for one full year
 
 The project is organized into the following directories and files:
 
+```
 => SolarEnergyDataAnalyticsUsingAIML/
 ├── data/
 │   ├── Cleaned CSV files from NSRDB (<city>_cleaned_data.csv)
@@ -87,9 +92,10 @@ The project is organized into the following directories and files:
 │	├── svr_model.py            # SVR model for time series forecasting
 │	├── battery_planner.py      # Battery Planner model for time series forecasting
 ├── plots/ (All output graphs, trends, and visualizations)
-├── analytics_grouped.py    # Data cleaning, preprocessing, and visualization
+├── analytics_grouped.py    	# Data cleaning, preprocessing, and visualization
 ├── Makefile                    # Build automation for project
 └── README.md                   # Project overview and usage instructions
+```
 
 => Run all scripts(.py) to see functioning of each file one by one
 => At last Run everything in sequence => command (Makefile) => make grouped-analytics (on terminal)
